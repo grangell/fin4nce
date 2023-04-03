@@ -1,0 +1,24 @@
+{
+  "funcionarios": [
+    {
+      "name": "Marina Silva",
+      "salario": "1.500",
+      "id": 1
+    },
+    {
+      "name": "Jorge Lucas",
+      "salario": "2000",
+      "id": 2
+    },
+    {
+      "name": "Maria Pinheiro",
+      "salario": "2500",
+      "id": 3
+    },
+    {
+      "name": "Gustavo Fernandes",
+      "salario": "3000",
+      "id": 4
+    }
+  ]
+}
