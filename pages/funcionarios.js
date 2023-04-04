@@ -129,8 +129,13 @@ export default class FuncionariosCrud extends Component {
         )
     }
 
+    mapFunc() {
+        this.state.list.map(user)
+    }
+
     renderRows() {
-        return ( this.state.list.map(user => {
+        this.mapFunc()
+        {
             return (
                 <tr key={user.id}>
                     <td>{user.id}</td>
@@ -148,7 +153,7 @@ export default class FuncionariosCrud extends Component {
                     </td>
                 </tr>
             )
-        }))
+        }
     }
 
     render() {
