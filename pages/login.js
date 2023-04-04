@@ -50,7 +50,7 @@ export default function Login() {
 
   useEffect(() => {
     auth.user && router.push('/system')
-  }, [auth.user])
+  }, [auth.user, router])
   
 
   return (

@@ -15,7 +15,7 @@ export default function Home() {
         ? router.push('/system') 
         : router.push('/login')
     }
-  }, [auth.user])
+  }, [auth.user, router, auth.loading])
 
   return (
     <Container p={4} centerContent>

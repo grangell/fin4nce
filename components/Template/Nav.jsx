@@ -12,7 +12,7 @@ export default function Nav() {
     
     useEffect(() => {
         !auth.user && router.push('/')
-      }, [auth.user])
+      }, [auth.user, router])
 
     return (
         <aside className="menu-area">

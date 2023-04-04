@@ -1,6 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react"
 import { AuthProvider } from "../components"
-import theme from "./theme"
+import theme from "../public/theme"
 import '../public/app.css'
 import Head from 'next/head'
 

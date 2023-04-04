@@ -67,7 +67,7 @@ export default function SignUp() {
 
   useEffect(() => {
     auth.user && router.push('/login')
-  }, [auth.user])
+  }, [auth.user, router])
   
 
   return (
