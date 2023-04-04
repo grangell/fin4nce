@@ -11,7 +11,7 @@ const headerProps = {
     subtitle: 'Gerenciamento de funcionários: Incluir, Listar, Alterar e Excluir!'
 }
 
-const baseUrl = 'https://fin4nce-e4wq-fek0w43lt-gabzdev.vercel.app/funcionarios'
+const baseUrl = 'http://localhost:3001/funcionarios'
 const initialState = {
     user: { name: '', salario: '' },
     list: []
@@ -21,7 +21,7 @@ export default class FuncionariosCrud extends Component {
 
     state = { ...initialState }
 
-    UNSAFE_componentWillMount() {
+    componentDidMount() {
         axios(baseUrl).then(resp => {
             this.setState({ list: resp.data })
         })
@@ -129,18 +129,13 @@ export default class FuncionariosCrud extends Component {
         )
     }
 
-    mapFunc() {
-        this.state.list.map(user)
-    }
-
     renderRows() {
-        this.mapFunc()
-        {
+        return this.state.list.map(user => {
             return (
-                <tr key={this.user.id}>
-                    <td>{this.user.id}</td>
-                    <td>{this.user.name}</td>
-                    <td>{this.user.salario}</td>
+                <tr key={user.id}>
+                    <td>{user.id}</td>
+                    <td>{user.name}</td>
+                    <td>{user.salario}</td>
                     <td>
                         <button className="btn btn-warning"
                             onClick={() => this.load(user)}>
@@ -153,7 +148,7 @@ export default class FuncionariosCrud extends Component {
                     </td>
                 </tr>
             )
-        }
+        })
     }
 
     render() {
@@ -172,3 +167,4 @@ export default class FuncionariosCrud extends Component {
 } 
 
 FuncionariosCrud.title = 'Funcionários'
+
