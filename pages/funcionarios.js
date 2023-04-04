@@ -137,10 +137,10 @@ export default class FuncionariosCrud extends Component {
         this.mapFunc()
         {
             return (
-                <tr key={user.id}>
-                    <td>{user.id}</td>
-                    <td>{user.name}</td>
-                    <td>{user.salario}</td>
+                <tr key={this.user.id}>
+                    <td>{this.user.id}</td>
+                    <td>{this.user.name}</td>
+                    <td>{this.user.salario}</td>
                     <td>
                         <button className="btn btn-warning"
                             onClick={() => this.load(user)}>
