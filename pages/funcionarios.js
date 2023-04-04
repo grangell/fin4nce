@@ -11,7 +11,7 @@ const headerProps = {
     subtitle: 'Gerenciamento de funcionários: Incluir, Listar, Alterar e Excluir!'
 }
 
-const baseUrl = 'http://localhost:3001/funcionarios'
+const baseUrl = 'https://fin4nce-g.vercel.app/funcionarios'
 const initialState = {
     user: { name: '', salario: '' },
     list: []
