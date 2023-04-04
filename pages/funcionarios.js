@@ -21,7 +21,7 @@ export default class FuncionariosCrud extends Component {
 
     state = { ...initialState }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         axios(baseUrl).then(resp => {
             this.setState({ list: resp.data })
         })
