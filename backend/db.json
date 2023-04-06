@@ -1,24 +1,34 @@
 {
   "funcionarios": [
     {
-      "name": "Milena Silva",
-      "salario": "1.500",
+      "name": "Gabriel Castro",
+      "salario": "1500",
       "id": 1
     },
     {
-      "name": "Jorge Lucas",
-      "salario": "2000",
+      "name": "Lucas Silva",
+      "salario": "900",
       "id": 2
     },
     {
-      "name": "Maria Pinheiro",
-      "salario": "2500",
+      "name": "Otávio Souza",
+      "salario": "2000",
       "id": 3
     },
     {
-      "name": "Gustavo Fernandes",
-      "salario": "3000",
+      "name": "Myllena Almeida",
+      "salario": "5000",
       "id": 4
+    },
+    {
+      "name": "Lucas Andrade",
+      "salario": "4000",
+      "id": 5
+    },
+    {
+      "name": "Thomas Barros",
+      "salario": "2000",
+      "id": 6
     }
   ]
 }

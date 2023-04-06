@@ -113,19 +113,21 @@ export default class FuncionariosCrud extends Component {
 
     renderTable() {
         return (
-            <table className="table mt-4">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Funcionário</th>
-                        <th>Salário</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.renderRows()}
-                </tbody>
-            </table>
+            <div className="tabela">
+                <table className="table mt-4">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Funcionário</th>
+                            <th>Salário</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody className="overflow-hidden">
+                        {this.renderRows()}
+                    </tbody>
+                </table>
+            </div>
         )
     }
 
