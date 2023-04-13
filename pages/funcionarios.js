@@ -17,7 +17,7 @@ const initialState = {
     list: []
 }
 
-export default class FuncionariosCrud extends Component {
+export default class Funcionarios extends Component {
 
     state = { ...initialState }
 
@@ -172,5 +172,5 @@ export default class FuncionariosCrud extends Component {
     }
 } 
 
-FuncionariosCrud.title = 'Funcionários'
+Funcionarios.title = 'Funcionários'
 
