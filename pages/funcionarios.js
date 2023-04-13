@@ -30,18 +30,30 @@ export default class FuncionariosCrud extends Component {
     clear() {
         this.setState({ user: initialState.user })
     }
-
+    
     save() {
         const user = this.state.user
         const method = user.id ? 'put' : 'post'
         const url = user.id ? `${baseUrl}/${user.id}` : baseUrl
         axios[method](url, user)
-            .then(resp => {
-                const list = this.getUpdatedList(resp.data)
-                this.setState({ user: initialState.user, list })
-            })
+        .then(resp => {
+            const list = this.getUpdatedList(resp.data)
+            this.setState({ user: initialState.user, list })
+        })
     }
-
+    
+    
+    load(user) {
+        this.setState({ user })
+    }
+    
+    remove(user) {
+        axios.delete(`${baseUrl}/${user.id}`).then(resp => {
+            const list = this.getUpdatedList(user, false)
+            this.setState({ list })
+        })
+    }
+    
     getUpdatedList(user, add = true) {
         const list = this.state.list.filter(u => u.id !== user.id)
         if(add) list.unshift(user)
@@ -52,7 +64,9 @@ export default class FuncionariosCrud extends Component {
         const user = { ...this.state.user }
         user[event.target.name] = event.target.value
         this.setState({ user })
+        console.log(typeof(event))
     }
+
 
     renderForm() {
         return (
@@ -100,16 +114,6 @@ export default class FuncionariosCrud extends Component {
         )
     }
 
-    load(user) {
-        this.setState({ user })
-    }
-
-    remove(user) {
-        axios.delete(`${baseUrl}/${user.id}`).then(resp => {
-            const list = this.getUpdatedList(user, false)
-            this.setState({ list })
-        })
-    }
 
     renderTable() {
         return (
