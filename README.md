@@ -3,7 +3,7 @@
 ## Objetivo
 Repositório para controlar as versões de desenvolvimento do projeto (Trabalho de Conclusão de Curso).
 
-## Projeto final
+## Projeto
 * [Projeto final em produção](https://fin4nce.vercel.app/)
 
 ## Tecnologias utilizadas
