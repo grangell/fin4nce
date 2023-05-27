@@ -1,4 +1,4 @@
-# FIN4NCE - Sistema de Gerenciamento de Funcionários
+# FIN4NCE - Gerenciamento de Funcionários
 
 ## Objetivo
 Repositório para controlar as versões de desenvolvimento do projeto (Trabalho de Conclusão de Curso).
