@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# texto
+.tcc.txt
+
 # next.js
 /.next/
 /out/

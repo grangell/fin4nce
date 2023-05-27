@@ -85,6 +85,7 @@ footer.footer {
     grid-area: footer;
 }
 
+/* Responsividade */
 @media(max-width: 768px) {
     .app {
         grid-template-rows: 
@@ -102,6 +103,7 @@ footer.footer {
     }
 }
 
+/* Responsividade */
 @media(max-width: 576px) {
     .app {
         grid-template-rows:
@@ -164,6 +166,7 @@ aside.menu-area {
         2px 0 15px 0 rgba(0, 0, 0,);
 }
 
+/* Menu */
 .menu {
     font-size: 17px;
     font-weight: lighter;
@@ -185,6 +188,7 @@ aside.menu-area {
 }
 
 
+/* Responsividade */
 @media(max-width: 768px) {
     .menu {
         display: flex;
