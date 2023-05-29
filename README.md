@@ -5,6 +5,7 @@ Repositório para controlar as versões de desenvolvimento do projeto (Trabalho 
 
 ## Projeto
 * [Projeto final em produção](https://fin4nce.vercel.app/)
+* Chave de acesso para se cadastrar: 123456
 
 ## Tecnologias utilizadas
 * Back/front: JavaScript, Node, Next, React, Bootstrap, Axios;
