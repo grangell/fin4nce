@@ -15,7 +15,7 @@ export default class Financeiro extends Component {
     
     renderMain() {
         return (    
-            <h1>teste</h1>
+            <h1>Parte adicional do sistema.</h1>
         )   
     }
 
