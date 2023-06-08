@@ -7,7 +7,7 @@ import Footer from '../components/Template/Footer'
 const headerProps = {
     icon: 'file',
     title: 'Financeiro',
-    subtitle: 'Descrição do sistema e suas funcionalidades.'
+    subtitle: 'Parte adicional do sistema.'
 }
 
 
